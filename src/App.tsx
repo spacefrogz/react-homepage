@@ -24,6 +24,7 @@ const App = () => {
       status: 'success',
       duration: 9000,
       isClosable: false,
+      position: "top"
     })
 
   const somethingWentWrong = () =>
@@ -33,6 +34,7 @@ const App = () => {
       status: `error`,
       duration: 9000,
       isClosable: false,
+      position: "top"
     })
 
 
