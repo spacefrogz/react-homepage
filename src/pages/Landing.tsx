@@ -6,6 +6,7 @@ import CachedRoundedIcon from '@mui/icons-material/CachedRounded'
 import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded'
 import useWindowDimensions from "../hooks/useWindowDimensions"
 import getRandomEmoji from "../utils/emojis"
+import { isMobile } from "react-device-detect";
 
 const Landing = () => {
   const toast = useToast()
@@ -15,7 +16,8 @@ const Landing = () => {
   const [reload, setReload] = useState<boolean>(false)
 
   useEffect(() => {
-    setEmojis(`${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}`)
+    const emojiGeneratedString = isMobile ? `${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}\n${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}` : `${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}`
+    setEmojis(emojiGeneratedString)
   }, [reload])
 
   const copiedToClipboard = () =>
@@ -55,7 +57,7 @@ const Landing = () => {
 
       <Box flexDirection={"column"} paddingX={12}>
 
-        <Text fontSize={44} fontWeight={"semibold"} color={"#F0EBEB"}>
+        <Text textAlign={"center"} fontSize={44} fontWeight={"semibold"} color={"#F0EBEB"}>
           {emojis}
         </Text>
         <Box display={"flex"} flex={1} justifyContent={"space-between"} flexDirection={"row"} marginTop={8}>
@@ -67,6 +69,8 @@ const Landing = () => {
           </Button>
         </Box>
       </Box>
+      <div>I am rendered on: {isMobile ? "Mobile" : "Desktop"}</div>
+
     </Box>
   )
 }
