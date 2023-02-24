@@ -9,7 +9,7 @@ import useWindowDimensions from "./hooks/useWindowDimensions"
 
 const App = () => {
   const toast = useToast()
-  const { height } = useWindowDimensions()
+  const { height, width } = useWindowDimensions()
 
   const [emojis, setEmojis] = useState<string>("")
   const [reload, setReload] = useState<boolean>(false)
@@ -50,9 +50,8 @@ const App = () => {
 
   const reloadEmojis = () => setReload(!reload)
 
-
   return (
-    <Box display={"flex"} flex={1} height={height} justifyContent={"center"} alignItems={"center"} >
+    <Box display={"flex"} flex={1} height={height} width={width} justifyContent={"center"} alignItems={"center"} >
 
       <Box flexDirection={"column"} >
 
