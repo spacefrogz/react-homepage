@@ -2,6 +2,7 @@
   "name": "react-homepage",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spacefrogz.github.io/react-homepage",
   "dependencies": {
     "@chakra-ui/react": "^2.5.1",
     "@emotion/react": "^11.10.6",
