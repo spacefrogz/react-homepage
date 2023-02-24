@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import CachedRoundedIcon from '@mui/icons-material/CachedRounded'
 import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded'
 import useWindowDimensions from "../hooks/useWindowDimensions"
-import emoji from "../utils/emojis"
+import getRandomEmoji from "../utils/emojis"
 
 const Landing = () => {
   const toast = useToast()
@@ -15,7 +15,7 @@ const Landing = () => {
   const [reload, setReload] = useState<boolean>(false)
 
   useEffect(() => {
-    setEmojis(`${emoji()} ${emoji()} ${emoji()} ${emoji()} ${emoji()} ${emoji()} ${emoji()} ${emoji()}`)
+    setEmojis(`${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()} ${getRandomEmoji()}`)
   }, [reload])
 
   const copiedToClipboard = () =>
@@ -53,7 +53,7 @@ const Landing = () => {
   return (
     <Box display={"flex"} flex={1} height={height} width={width} justifyContent={"center"} alignItems={"center"} >
 
-      <Box flexDirection={"column"} >
+      <Box flexDirection={"column"} paddingX={12}>
 
         <Text fontSize={44} fontWeight={"semibold"} color={"#F0EBEB"}>
           {emojis}
