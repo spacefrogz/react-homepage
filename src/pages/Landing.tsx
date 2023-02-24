@@ -57,7 +57,7 @@ const Landing = () => {
 
       <Box flexDirection={"column"} paddingX={12}>
 
-        <Text textAlign={"center"} fontSize={44} fontWeight={"semibold"} color={"#F0EBEB"}>
+        <Text textAlign={"center"} fontSize={66} fontWeight={"semibold"} color={"#F0EBEB"}>
           {emojis}
         </Text>
         <Box display={"flex"} flex={1} justifyContent={"space-between"} flexDirection={"row"} marginTop={8}>
