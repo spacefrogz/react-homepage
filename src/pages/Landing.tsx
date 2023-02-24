@@ -6,7 +6,7 @@ import CachedRoundedIcon from '@mui/icons-material/CachedRounded'
 import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded'
 import useWindowDimensions from "../hooks/useWindowDimensions"
 import getRandomEmoji from "../utils/emojis"
-import { isMobile } from "react-device-detect";
+import { isMobile } from "react-device-detect"
 
 const Landing = () => {
   const toast = useToast()
@@ -69,8 +69,6 @@ const Landing = () => {
           </Button>
         </Box>
       </Box>
-      <div>I am rendered on: {isMobile ? "Mobile" : "Desktop"}</div>
-
     </Box>
   )
 }
