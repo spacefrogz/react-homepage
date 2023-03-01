@@ -7,7 +7,7 @@ const SpaceFrogsStudio = () => {
 
   return (
     <Box height={height} display={"flex"} justifyContent={"center"} alignItems={"center"} >
-      <Heading color={"#F2F2F2"} fontSize={"7xl"} fontWeight={"thin"}>Space Frogz Studio</Heading>
+      <Heading textAlign={"center"} color={"#F2F2F2"} fontSize={"7xl"} fontWeight={"thin"}>Space Frogz Studio</Heading>
     </Box>
   )
 }
