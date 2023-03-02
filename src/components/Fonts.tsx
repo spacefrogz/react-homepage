@@ -6,7 +6,8 @@ const Fonts = () => (
       @font-face {
         font-family: 'Synkopy-Regular';
         src: url('./fonts/Synkopy/Synkopy-Regular.eot'); /* IE9 Compat Modes */
-        src: local('Synkopy'), url('./fonts/Synkopy/Synkopy-Regular.ttf') format('truetype');
+        src: url('./fonts/Synkopy/Synkopy-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+             local('Synkopy'), url('./fonts/Synkopy/Synkopy-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
       }
       @font-face {
         font-family: 'Synkopy-Flipside';
