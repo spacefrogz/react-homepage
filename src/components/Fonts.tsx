@@ -5,11 +5,12 @@ const Fonts = () => (
     styles={`
       @font-face {
         font-family: 'Synkopy-Regular';
-        src: local('Synkopy'), url('./fonts/Synkopy-Regular.ttf') format('truetype');
+        src: url('./fonts/Synkopy/Synkopy-Regular.eot'); /* IE9 Compat Modes */
+        src: local('Synkopy'), url('./fonts/Synkopy/Synkopy-Regular.ttf') format('truetype');
       }
       @font-face {
         font-family: 'Synkopy-Flipside';
-        src: local('Synkopy'), url('./fonts/Synkopy-Flipside.ttf') format('truetype');
+        src: local('Synkopy'), url('./fonts/Synkopy/Synkopy-Flipside.ttf') format('truetype');
       }
       @font-face {
         font-family: 'Genos';
