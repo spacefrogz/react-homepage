@@ -11,6 +11,10 @@ const Fonts = () => (
         font-family: 'Synkopy-Flipside';
         src: local('Synkopy'), url('./fonts/Synkopy-Flipside.ttf') format('truetype');
       }
+      @font-face {
+        font-family: 'Genos';
+        src: local('Synkopy'), url('./fonts/Genos-VariableFont_wght.ttf') format('truetype');
+      }
       `}
   />
 )
