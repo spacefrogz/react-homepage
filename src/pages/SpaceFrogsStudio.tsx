@@ -4,6 +4,7 @@ import { Box, Text } from '@chakra-ui/react'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 import { isMobile } from 'react-device-detect'
 import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 const SpaceFrogsStudio = () => {
   const { height } = useWindowDimensions()
@@ -38,7 +39,9 @@ const SpaceFrogsStudio = () => {
           </Text>
         </Text>
       </Fade>
-      <Text fontFamily={"GenosRoman-Medium"} fontSize={16} bgClip={"text"} bgGradient={"linear(to-l, #aa4b6b, #6b6b83, #3b8d99)"} textAlign={"center"}>Built with ❤️‍🔥 by Horik</Text>
+      <Zoom>
+        <Text fontFamily={"GenosRoman-Medium"} fontSize={16} bgClip={"text"} bgGradient={"linear(to-l, #aa4b6b, #6b6b83, #3b8d99)"} textAlign={"center"}>Built with ❤️‍🔥 by Horik</Text>
+      </Zoom>
     </Box >
   )
 }
