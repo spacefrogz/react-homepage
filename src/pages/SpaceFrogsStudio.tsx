@@ -25,7 +25,7 @@ const SpaceFrogsStudio = () => {
         <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>i</Text>
         <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>o</Text>
       </Box>
-      <Text fontFamily={"Genos"} bgClip={"text"} bgGradient={"linear(to-l, #aa4b6b, #6b6b83, #3b8d99)"} textAlign={"center"}>Built with 💚 by Horik</Text>
+      <Text fontFamily={"GenosRoman-Medium"} fontSize={16} bgClip={"text"} bgGradient={"linear(to-l, #aa4b6b, #6b6b83, #3b8d99)"} textAlign={"center"}>Built with ❤️‍🔥 by Horik</Text>
     </Box>
   )
 }
