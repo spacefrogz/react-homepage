@@ -1,14 +1,8 @@
 import React from "react"
-import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import { ChakraProvider, theme } from "@chakra-ui/react"
 import Landing from "./pages/Landing"
 import Fonts from "./components/Fonts"
 import SpaceFrogsStudio from "./pages/SpaceFrogsStudio"
-
-const theme = extendTheme({
-  fonts: {
-    heading: "Synkopy",
-  },
-})
 
 const WIP: boolean = true
 
