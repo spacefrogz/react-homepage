@@ -4,8 +4,12 @@ const Fonts = () => (
   <Global
     styles={`
       @font-face {
-        font-family: 'Synkopy';
+        font-family: 'Synkopy-Regular';
         src: local('Synkopy'), url('./fonts/Synkopy-Regular.ttf') format('truetype');
+      }
+      @font-face {
+        font-family: 'Synkopy-Flipside';
+        src: local('Synkopy'), url('./fonts/Synkopy-Flipside.ttf') format('truetype');
       }
       `}
   />
