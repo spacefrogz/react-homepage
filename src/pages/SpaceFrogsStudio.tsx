@@ -6,6 +6,8 @@ import { isMobile } from 'react-device-detect'
 const SpaceFrogsStudio = () => {
   const { height } = useWindowDimensions()
 
+  console.log("is mobile?", isMobile)
+
   return (
     <Box>
       <Text fontSize={"7xl"} fontWeight={"thin"} fontFamily={"Synkopy-Regular"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
