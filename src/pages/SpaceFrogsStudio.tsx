@@ -3,7 +3,7 @@ import React from 'react'
 import { Box, Text } from '@chakra-ui/react'
 import useWindowDimensions from '../hooks/useWindowDimensions'
 import { isMobile } from 'react-device-detect'
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 const SpaceFrogsStudio = () => {
   const { height } = useWindowDimensions()
@@ -12,7 +12,7 @@ const SpaceFrogsStudio = () => {
 
   return (
     <Box>
-      <Zoom>
+      <Fade bottom big cascade>
         <Text fontSize={"7xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
           <Text display={"flex"}>
             <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>S</Text>
@@ -37,7 +37,7 @@ const SpaceFrogsStudio = () => {
             <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>o</Text>
           </Text>
         </Text>
-      </Zoom>
+      </Fade>
       <Text fontFamily={"GenosRoman-Medium"} fontSize={16} bgClip={"text"} bgGradient={"linear(to-l, #aa4b6b, #6b6b83, #3b8d99)"} textAlign={"center"}>Built with ❤️‍🔥 by Horik</Text>
     </Box >
   )
