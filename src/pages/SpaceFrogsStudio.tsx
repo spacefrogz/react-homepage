@@ -9,7 +9,7 @@ import Zoom from 'react-reveal/Zoom';
 const SpaceFrogsStudio = () => {
   const { height } = useWindowDimensions()
 
-  console.log("is mobile?", isMobile)
+  console.log("Is mobile?", isMobile)
 
   return (
     <Box>
