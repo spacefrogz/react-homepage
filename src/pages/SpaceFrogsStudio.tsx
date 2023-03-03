@@ -14,7 +14,7 @@ const SpaceFrogsStudio = () => {
   return (
     <Box>
       <Fade bottom big cascade>
-        <Text fontSize={"7xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"} flexWrap={"wrap"}>
+        <Text flexDirection={isMobile ? "column" : "row"} fontSize={"7xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"}>
           <Text display={"flex"}>
             <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>S</Text>
             <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>p</Text>
