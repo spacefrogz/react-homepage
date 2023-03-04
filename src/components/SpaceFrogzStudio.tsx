@@ -9,7 +9,7 @@ const SpaceFrogzStudio = () => {
 
   return (
     <Fade big cascade>
-      <Text flexDirection={isMobile ? "column" : "row"} fontSize={"7xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+      <Text flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"}>
         <Text display={"flex"}>
           <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>S</Text>
           <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>p</Text>
