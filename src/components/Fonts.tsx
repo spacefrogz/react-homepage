@@ -13,6 +13,10 @@ const Fonts = () => (
              url('./fonts/Synkopy/Synkopy-Regular.svg#SynkopyRegular') format('svg');
       }
       @font-face {
+        font-family: 'Poppins';
+        src: local('Poppins'), url('./fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+      }
+      @font-face {
         font-family: 'Synkopy-Flipside';
         src: local('Synkopy'), url('./fonts/Synkopy/Synkopy-Flipside.ttf') format('truetype');
       }
