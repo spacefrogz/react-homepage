@@ -3,34 +3,35 @@ import Fade from 'react-reveal/Fade'
 import { Text } from "@chakra-ui/react"
 import { isMobile } from 'react-device-detect'
 import useWindowDimensions from "../hooks/useWindowDimensions"
+import { colors } from "../utils/colors"
 
 const SpaceFrogzStudio = () => {
   const { height } = useWindowDimensions()
 
   return (
     <Fade big cascade>
-      <Text flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height} display={"flex"} justifyContent={"center"} alignItems={"center"}>
-        <Text display={"flex"}>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>S</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>p</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>a</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>c</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#aa4b6b"}>e</Text>
+      <Text flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height - 80} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+        <Text display={"flex"} color={colors.bej}>
+          <Text _hover={{ fontFamily: "Synkopy" }}>S</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>p</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>a</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>c</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>e</Text>
         </Text>
-        <Text display={"flex"}>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#6b6b83"}>F</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#6b6b83"}>r</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#6b6b83"}>o</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#6b6b83"}>g</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#6b6b83"}>z</Text>
+        <Text display={"flex"} color={colors.bej}>
+          <Text _hover={{ fontFamily: "Synkopy" }}>F</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>r</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>o</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>g</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>z</Text>
         </Text>
-        <Text display={"flex"}>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>S</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>t</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>u</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>d</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>i</Text>
-          <Text _hover={{ fontFamily: "Synkopy" }} color={"#3b8d99"}>o</Text>
+        <Text display={"flex"} color={colors.bej}>
+          <Text _hover={{ fontFamily: "Synkopy" }}>S</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>t</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>u</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>d</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>i</Text>
+          <Text _hover={{ fontFamily: "Synkopy" }}>o</Text>
         </Text>
       </Text>
     </Fade>
