@@ -11,7 +11,7 @@ const SpaceFrogzStudio = () => {
   return (
     <Box height={sectionH} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
       <Fade duration={3000} key={"SpaceFrogzStudio"}>
-        <Text display={"flex"} flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"}>
+        <Text display={"flex"} flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside, sans-serif !important;"} textAlign={"center"}>
           <Text display={"flex"} color={colors.bej} marginX={2}>
             <Text _hover={{ fontFamily: "Synkopy" }}>S</Text>
             <Text _hover={{ fontFamily: "Synkopy" }}>p</Text>
