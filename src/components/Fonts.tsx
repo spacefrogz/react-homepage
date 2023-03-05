@@ -4,7 +4,7 @@ const Fonts = () => (
   <Global
     styles={`
       @font-face {
-        font-family: 'Synkopy-Regular';
+        font-family: 'Synkopy';
         src: url('./fonts/Synkopy/Synkopy-Regular.eot'); /* IE9 Compat Modes */
         src: url('./fonts/Synkopy/Synkopy-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
              url('./fonts/Synkopy/Synkopy-Regular.woff2') format('woff2'), /* Super Modern Browsers */
