@@ -1,12 +1,14 @@
 {
   "files": {
-    "main.js": "/react-homepage/static/js/main.66588ade.js",
+    "main.js": "/react-homepage/static/js/main.30e9e1d7.js",
     "static/js/787.8c7a4c00.chunk.js": "/react-homepage/static/js/787.8c7a4c00.chunk.js",
+    "static/media/logo.png": "/react-homepage/static/media/logo.50135a71a1f1afef8c10.png",
+    "static/media/the_gopher_frog.png": "/react-homepage/static/media/the_gopher_frog.7080375b3cc673797d1c.png",
     "index.html": "/react-homepage/index.html",
-    "main.66588ade.js.map": "/react-homepage/static/js/main.66588ade.js.map",
+    "main.30e9e1d7.js.map": "/react-homepage/static/js/main.30e9e1d7.js.map",
     "787.8c7a4c00.chunk.js.map": "/react-homepage/static/js/787.8c7a4c00.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.66588ade.js"
+    "static/js/main.30e9e1d7.js"
   ]
 }
