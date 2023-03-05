@@ -2,15 +2,15 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import { Text } from "@chakra-ui/react"
 import { isMobile } from 'react-device-detect'
-import useWindowDimensions from "../hooks/useWindowDimensions"
 import { colors } from "../utils/colors"
+import useDimensions from "../hooks/useCustomDimensions"
 
 const SpaceFrogzStudio = () => {
-  const { height } = useWindowDimensions()
+  const { sectionH } = useDimensions()
 
   return (
     <Fade big cascade>
-      <Text flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={height - 80} display={"flex"} justifyContent={"center"} alignItems={"center"}>
+      <Text flexDirection={isMobile ? "column" : "row"} fontSize={isMobile ? "6xl" : "8xl"} fontWeight={"thin"} fontFamily={"Synkopy-Flipside"} textAlign={"center"} height={sectionH} display={"flex"} justifyContent={"center"} alignItems={"center"}>
         <Text display={"flex"} color={colors.bej}>
           <Text _hover={{ fontFamily: "Synkopy" }}>S</Text>
           <Text _hover={{ fontFamily: "Synkopy" }}>p</Text>
