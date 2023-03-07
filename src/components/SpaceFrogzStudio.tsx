@@ -4,9 +4,16 @@ import { colors } from "../utils/colors"
 import useDimensions from "../hooks/useCustomDimensions"
 import { Fade } from "react-awesome-reveal"
 import strings from "../utils/strings"
+import getRandomEmoji from "../utils/emojis"
+import { useState } from "react"
 
 const SpaceFrogzStudio = () => {
   const { sectionH } = useDimensions()
+
+  const [heart, setHeart] = useState<string>(getRandomEmoji("Smileys & Emotion", "hearts"))
+
+  const generateNewHeart = () => setHeart(getRandomEmoji("Smileys & Emotion", "hearts"))
+
 
   return (
     <Box height={sectionH} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
@@ -37,7 +44,11 @@ const SpaceFrogzStudio = () => {
         </Text>
       </Fade>
       <Fade delay={1500} duration={3000} key={"MadeByHorik"}>
-        <Text fontFamily={"Synkopy"} color={colors.bej}>{strings.builtByHorik}</Text>
+        <Box display={"flex"} justifyContent={"center"} alignItems={"center"} flexDirection={"row"}>
+          <Text fontFamily={"Synkopy"} color={colors.bej}>{strings.builtWith}</Text>
+          <Text marginX={2} onClick={() => generateNewHeart()}>{heart}</Text>
+          <Text fontFamily={"Synkopy"} color={colors.bej}>{strings.builtBy}</Text>
+        </Box>
       </Fade>
     </Box>
   )
