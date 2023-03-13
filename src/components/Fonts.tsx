@@ -9,7 +9,7 @@ const Fonts = () => (
              url('./fonts/Synkopy/Synkopy-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
              url('./fonts/Synkopy/Synkopy-Regular.woff') format('woff'), /* Pretty Modern Browsers */
              url('./fonts/Synkopy/Synkopy-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-             local('Synkopy'), url('./fonts/Synkopy/Synkopy-Regular.ttf') format('truetype'); /* Safari, Android, iOS */
+             local('Synkopy'), url('./fonts/Synkopy/Synkopy-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
              url('./fonts/Synkopy/Synkopy-Regular.svg#Synkopy-Regular') format('svg');
       }
       @font-face {
